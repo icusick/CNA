@@ -1,3 +1,3 @@
 class Client < ActiveRecord::Base
-	belongs to :product
+	belongs_to :product
 end
