@@ -1,0 +1,2 @@
+# CNA
+practice ruby app
