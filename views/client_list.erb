@@ -1,0 +1,7 @@
+<% @clients.each do |client| %>
+	<li>
+	 <a href="/clients/<%=client.id %>">
+	 <%= client.organization %></a>
+	</li>
+
+<% end %>
