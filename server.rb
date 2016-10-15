@@ -19,6 +19,16 @@ module App
   	erb :client_view
   end
 
+  get "/new_client" do
+  	erb :new_client
+  end
+
+  post "/clients" do 
+    newClient = Client.create({organization: params["organization"], individual: params["individual"]})
+    redirect to "/clients"
+  end
+
+
 
   end
 
