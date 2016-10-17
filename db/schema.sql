@@ -1,5 +1,12 @@
 DROP TABLE IF EXISTS clients;
 DROP TABLE IF EXISTS products;
+DROP TABLE IF EXISTS users;
+
+CREATE TABLE users (
+	id INTEGER PRIMARY KEY,
+	password_digest VARCHAR,
+	name VARCHAR 
+);
 
 CREATE TABLE clients (
 	id INTEGER PRIMARY KEY,
@@ -22,3 +29,4 @@ CREATE TABLE products (
 	id INTEGER PRIMARY KEY,
 	kind VARCHAR
 );
+

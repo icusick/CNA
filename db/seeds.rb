@@ -2,6 +2,7 @@ require_relative "config"
 
 Client.destroy_all();
 Product.destroy_all();
+User.destroy_all();
 
 fill_clients = [
 	{organization: "Cuisinart", individual: "Bob", legislation: "yes", product_id: 1, committees: "yes", legislators: "yes", mobile_access: "yes"},
@@ -15,5 +16,10 @@ fill_products = [
 	{kind: "national"}
 ]
 
+fill_users = [
+	{name: "Isabel", password: "08cusicki"}
+]
+
 Client.create(fill_clients)
 Product.create(fill_products)
+User.create(fill_users)
